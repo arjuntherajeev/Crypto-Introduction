@@ -3,7 +3,7 @@ An interactive Web Application to introduce Caesar and Vigenère ciphers
 
 ## Run Locally 
 To run this Application locally: 
-* Download Python 2.7 [Python 2.7](https://www.python.org/downloads/)
+* Download [Python 2.7](https://www.python.org/downloads/)
 * Download [Web2Py](http://www.web2py.com/init/default/download)
 * Open Web2Py - You are required to give a password - Click on **start server**
 * Open Web2Py Web Interface (typically accessible via 127.0.0.1:8000)  
