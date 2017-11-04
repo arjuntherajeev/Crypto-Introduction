@@ -1,0 +1,43 @@
+{{include 'web2py_ajax.html'}}
+                <br> <span style="color:red;">Message is:  {{response.write(request.vars.v_message)}}</span> <br>
+                <br> <span style="color:red;">Key is:  {{response.write(request.vars.v_key)}}</span> <br>
+
+{{
+from itertools import cycle
+
+ALPHA = 'abcdefghijklmnopqrstuvwxyz'
+
+
+def encrypt(key, plaintext):
+    pairs = zip(plaintext, cycle(key))
+    result = ''
+    for pair in pairs:
+        total = reduce(lambda x, y: ALPHA.index(x) + ALPHA.index(y), pair)
+        result += ALPHA[total % 26]
+    pass
+    return result.lower()
+pass
+
+def decrypt(key, ciphertext):
+    pairs = zip(ciphertext, cycle(key))
+    result = ''
+    for pair in pairs:
+        total = reduce(lambda x, y: ALPHA.index(x) - ALPHA.index(y), pair)
+        result += ALPHA[total % 26]
+    pass
+    return result
+pass
+
+def show_result(plaintext, key):
+    """Generate a resulting cipher with elements shown"""
+    encrypted = encrypt(key, plaintext)
+    decrypted = decrypt(key, encrypted)
+    print 'Key: %s' % key
+    print 'Plaintext: %s' % plaintext
+    print 'Encrytped: %s' % encrypted
+    print 'Decrytped: %s' % decrypted
+pass
+
+encrypted = encrypt(request.vars.v_key, request.vars.v_message)
+response.write(encrypted)
+}}

@@ -1,0 +1,311 @@
+{{include 'web2py_ajax.html'}}
+<!-- Paranoid Android --> 
+<!DOCTYPE html>
+<!-- Vanilla Ice Cream :) -->
+
+<html lang="en">
+<head>
+    <!-- Placed first so that the font is loaded ASAP -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="song_singer" content="Thom Yorke"> <!-- Every amazing project begins with an amazing song -->
+    <meta name="author" content="Arjun Rajeev Nedungadi">   <!-- Started this project -->
+    <meta name="contact" content="arjun.rajeev@hotmail.com"><!-- For communication purposes -->
+    <meta name="keywords"  content="news, twitter, celebrities, musicians, actors, sportpersons, cms, ui, heriot watt, project, undergraduate, uk, dubai, student, sample" />
+    <title>Vanilla - Home</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{{=URL('static','css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Custom Google Web Font -->
+    <link href="{{=URL('static','font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom CSS-->
+    <link href="{{=URL('static','css/general.css')}}" rel="stylesheet">
+	
+	 <!-- Owl-Carousel -->
+    <link href="{{=URL('static','css/custom.css')}}" rel="stylesheet">
+	<link href="{{=URL('static','css/owl.carousel.css')}}" rel="stylesheet">
+    <link href="{{=URL('static','css/owl.theme.css')}}" rel="stylesheet">
+	<link href="{{=URL('static','css/style.css')}}" rel="stylesheet">
+	<link href="{{=URL('static','css/animate.css')}}" rel="stylesheet">
+	
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="{{=URL('static','css/magnific-popup.css')}}"> 
+	
+	<script src="{{=URL('static','js/TheaterJS-master/src/theater.min.js')}}"></script>
+	<script src="{{=URL('static','js/modernizr-2.8.3.min.js')}}"></script>  <!-- Modernizr /-->
+</head>
+
+<body id="home">
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+	
+	<!-- FullScreen -->
+    <div class="intro-header">
+		<div class="col-xs-12 text-center abcen1">
+			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Cryptography</h1>
+			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">We didn't make this website</h3>
+		</div>    
+        <!-- /.container -->
+		<div class="col-xs-12 text-center abcen wow fadeIn">
+			<div class="button_down "> 
+				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="{{=URL('static','img/icon/circle.png')}}" alt=""> </a>
+			</div>
+		</div>
+    </div>
+	
+	<!-- NavBar-->
+	<nav class="navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home">Cryptography</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					
+					<li class="menuItem"><a href="#whatis">What is?</a></li>
+					<li class="menuItem"><a href="#useit">Use It</a></li> 
+				<!--	<li class="menuItem"><a href="#screen">Screenshot</a></li>-->
+					<li class="menuItem"><a href="#credits">Credits</a></li>
+					<li class="menuItem"><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		   
+		</div>
+	</nav> 
+	
+	<!-- What is -->
+	<div id="whatis" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>What is..</h2>
+				<p class="lead" style="margin-top:0">Hello Arjun</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img class="rotate" src="{{=URL('static','img/intro/caesarsalad.jpg')}}" alt="Generic placeholder image" style="width:304px;height:228px;"> 
+				  <!-- Caesar salad for lolz -->
+				  <h3>Caesar Cipher</h3>
+				  <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
+
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="{{=URL('static','img/intro/vinegar.jpg')}}" alt="Generic placeholder image" style="width:304px;height:228px;">
+				  <!-- Vinegar cuz vignere lollzzz -->
+				   <h3>Vigenere Cipher</h3>
+					<p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+
+		</div>
+	</div>
+	
+	<!-- Use it -->
+    <div id ="useit" class="content-section-a">
+
+        <div class="container">
+			
+            <div class="row">
+			
+				<div class="col-sm-6 pull-right wow fadeInRightBig">
+                    <img class="img-responsive " src="{{=URL('static','img/intro/caesar.jpg')}}" alt="">
+                </div>
+				
+                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
+
+                    <h3 class="section-heading">Caesar Cipher</h3>
+					<div class="sub-title lead3">Try your skills in encoding a message<br> or randomize some shit<br>Maybe we can repeat this section many times</div>
+                    <p class="lead">
+
+                    <input type="text" name="message" value="Insert your message">
+					<input type="text" name="key" value="Insert your key"> 
+					<input type="button" value="Encode" name="name" onclick="ajax('{{=URL('default', 'echo')}}',['message','key'],'target')" />
+
+					<button>Randomly generate a encoded message</button>
+					<div id="target" class="sub-title lead3">Encoded message here </div>
+					</p>
+					<div class="sub-title lead3">Try your skills in decoding<br> <!-- Maybe we can repeat this section many times-->-Maybe ciphered stuff here?- then maybe through ajax swap with decoded<br>Maybe we can repeat this section many times</div>
+					<p class="lead">
+					<form>
+				    <input type="text" name="cipher"> <br> 
+    				<input value="a" type="radio" name="test" />
+    				Brute Force it!
+    				<br> 
+    				<input value="b" type="radio" name="test" />
+    				Try a key?
+    				<input type="number" name="c_key"/> 
+    				<br> 
+    				<input type="button" value="Decode" name="name" onclick="ajax('{{=URL('default', 'decode')}}',['cipher','test','c_key'],'target1')" />
+</form>	
+					<div class="sub-title lead3">Decoded message here </div>
+					</p>
+
+					 <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p> -->
+				</div>   
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+     <div id ="useit" class="content-section-a">
+
+        <div class="container">
+			
+            <div class="row">
+			
+				<div class="col-sm-6 pull-right wow fadeInRightBig">
+                    <img class="img-responsive " src="{{=URL('static','img/intro/vig.jpg')}}" alt="">
+                </div>
+				
+                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
+
+                    <h3 class="section-heading">Vigenere Cipher</h3>
+					<div class="sub-title lead3">Try your skills in deciphering the following<br> <!-- Maybe we can repeat this section many times-->-Maybe ciphered stuff here?- then maybe through ajax swap with decoded<br>Maybe we can repeat this section many times</div>
+                    <p class="lead">
+						<input type="text" name="fname" value="Insert your message"><input type="text" name="fname" value="Insert your key"> <button>Decode</button>
+					<button>Randomly generate a encoded word</button>
+					<div class="sub-title lead3">Encoded message here </div>
+					</p>
+					<div class="sub-title lead3">Try your skills in decoding<br> <!-- Maybe we can repeat this section many times-->-Maybe ciphered stuff here?- then maybe through ajax swap with decoded<br>Maybe we can repeat this section many times</div>
+					<p class="lead">
+					<input type="text" name="fname" value="Insert your key"> <button>Decode</button>
+					<div class="sub-title lead3">Decoded message here </div>
+					</p>
+
+				<!--	 <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
+					 <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p> -->
+				</div>   
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+             <div class="row">
+			 
+				<div class="col-sm-6 pull-right wow fadeInRightBig">
+                    <img class="img-responsive " src="{{=URL('static','img/intro/graph.jpeg')}}" alt="">
+                </div>
+			 
+                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
+                    <h3 class="section-heading">Hacking the Caesar Cipher</h3>
+                    <p class="lead">Due to the simple nature of the Caesar cipher, it could easily be brute forced by trying all possible 25 keys and then looking by eye to see if the plaintext was revealed (this too can be automated by checking for common English words to see if the solution was probable). However the much more elegant method of frequency analysis can be used.
+
+
+					</p>
+					
+				</div>           
+            </div>
+        </div>
+
+    </div>
+
+	<!-- Screenshot -->
+	
+	
+	
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h3 class="footer-title">Follow Me!</h3>
+            <p>Vuoi ricevere news su altri template?<br/>
+              Visita Andrea Galanti.it e vedrai tutte le news riguardanti nuovi Theme!<br/>
+              Go to: <a  href="http://andreagalanti.it" target="_blank">andreagalanti.it</a>
+            </p>
+			
+			
+	   
+          </div> <!-- /col-xs-7 -->
+
+          <div class="col-md-5">
+            <div class="footer-banner">
+              <h3 class="footer-title">Flatfy Theme</h3>
+              <ul>
+                <li>12 Column Grid Bootstrap</li>
+                <li>Form Contact</li>
+                <li>Drag Gallery</li>
+                <li>Full Responsive</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+              Go to: <a href="http://andreagalanti.it/flatfy" target="_blank">andreagalanti.it/flatfy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{=URL('static','js/jquery-1.10.2.js')}}"></script>
+    <script src="{{=URL('static','js/bootstrap.js')}}"></script>
+	<script src="{{=URL('static','js/owl.carousel.js')}}"></script>
+	<script src="{{=URL('static','js/script.js')}}"></script>
+	<!-- StikyMenu -->
+	<script src="{{=URL('static','js/stickUp.min.js')}}"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+		  
+		});
+	  });
+	
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="{{=URL('static','js/jquery.corner.js')}}"></script> 
+	<script src="{{=URL('static','js/wow.min.js')}}"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	<script src="{{=URL('static','js/classie.js')}}"></script>
+	<script src="{{=URL('static','js/uiMorphingButton_inflow.js')}}"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="{{=URL('static','js/jquery.magnific-popup.js')}}"></script> 
+
+
+
+
+
+<div id="target1" style="color: black; border: thin solid green;">
+</div>
+
+<h1>
+        Hello World :) <br> 
+        Vigenere Cipher 
+</h1>
+
+<form>
+    <h5> Enter a Message!</h5>
+    <input type="text" name="v_message">
+    <h5> Enter a Key!</h5>
+    <input type="text" name="v_key">
+    <br> 
+    <input type="button" value="Click" name="name" onclick="ajax('{{=URL('default', 'v_echo')}}',['v_message','v_key'],'v_target')" />
+</form>
+
+<div id="v_target" style="color: black; border: thin solid black;">
+</div>

@@ -1,0 +1,57 @@
+{{include 'web2py_ajax.html'}}
+<!--                 <br> <span style="color:red;">Cipher is:  {{response.write(request.vars.cipher)}}</span> <br> -->
+<!--                 <br> <span style="color:red;">Test is:  {{response.write(request.vars.test)}}</span> <br> -->
+<!--                 <br> <span style="color:red;">Check is:  {{response.write(request.vars.c_key)}}</span> <br> -->
+
+{{
+def encodeCipher(msg,key):
+	response.write("Decoding...")
+	result = ""
+	for ch in msg: 
+		if ch.isalpha():
+			num = ord(ch)
+			num = num + key
+			if ch.isupper():
+				if num > ord('Z'):
+					num = num - 26
+				elif num < ord('A'):
+					num = num + 26
+                pass
+			elif ch.islower():
+				if num > ord('z'):
+					num = num - 26
+				elif num < ord('a'):
+					num = num + 26 
+                pass
+            pass
+			result = result + chr(num)
+		else: 
+			result = result + ch
+        pass
+    pass
+	return result
+
+
+def decodeBrute(msg):
+	for i in range(1,27):
+		m = msg
+		k = i
+		ans = encodeCipher(m, -k)
+		response.write("ans = "+ans+" key = "+str(-k*(-1))+"\n" ) }}<br> {{ 
+	pass
+pass
+
+def decodeWithKey(msg,key):
+	ans = encodeCipher(msg,-key)
+    #response.write("HELLLLLLLLLLLOOOOOOOOOOOO")
+    response.write("ans = "+ans+" key = "+str(-key*(-1)) )
+pass
+
+if(request.vars.test=='a'):
+	decodeBrute(request.vars.cipher)
+pass
+elif(request.vars.test=='b'):
+	decodeWithKey(request.vars.cipher,int(request.vars.c_key))
+pass
+
+}}

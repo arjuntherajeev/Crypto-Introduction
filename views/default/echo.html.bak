@@ -1,0 +1,73 @@
+{{include 'web2py_ajax.html'}}
+                <br> <span style="color:red;">Message is:  {{response.write(request.vars.message)}}</span> <br>
+                <br> <span style="color:red;">Key is:  {{response.write(request.vars.key)}}</span> <br>
+{{
+# start
+# Arjun @arjuntherajeev
+# Caesar Cipher 
+# Reference:- www.inventwithpython.com
+
+def validateKey(key):
+	if(key in range(1,27)):
+		return True
+	else:
+		return False
+    pass
+
+def inputMsg():
+#	print ("Please, Enter your message: ")
+	msg=request.vars.message
+    return msg
+
+def inputKey():
+#	print ("Please, Enter your key: ")
+	key=int(request.vars.key)
+#   print type(request.vars.key)
+    val = validateKey(key)
+	if(val==False):
+		inputKey()
+	else:
+		return key
+    pass
+
+def encodeCipher(msg,key):
+	response.write("Encoding...")
+	result = ""
+	for ch in msg: 
+		if ch.isalpha():
+			num = ord(ch)
+			num = num + key
+			if ch.isupper():
+				if num > ord('Z'):
+					num = num - 26
+				elif num < ord('A'):
+					num = num + 26
+                pass
+			elif ch.islower():
+				if num > ord('z'):
+					num = num - 26
+				elif num < ord('a'):
+					num = num + 26 
+                pass
+            pass
+			result = result + chr(num)
+		else: 
+			result = result + ch
+        pass
+    pass
+	return result
+
+def do():
+	m = inputMsg()
+	k = inputKey()
+	ans = encodeCipher(m, k)
+	response.write ("ans = "+ans)
+    pass
+
+print("Welcome to Caesar Cipher!")
+print("by Arjun Rajeev Nedungadi (@arjuntherajeev) :)")
+do()
+
+#end
+}}
+                <br>

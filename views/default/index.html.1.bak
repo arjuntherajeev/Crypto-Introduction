@@ -1,0 +1,103 @@
+{{include 'web2py_ajax.html'}}
+<!-- Paranoid Android --> 
+<!DOCTYPE html>
+<!-- Vanilla Ice Cream :) -->
+
+<html lang="en">
+<head>
+    <!-- Placed first so that the font is loaded ASAP -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Ladybug Musical Emporium">
+    <meta name="song_singer" content="Thom Yorke"> <!-- Every amazing project begins with an amazing song -->
+    <meta name="author" content="Arjun Rajeev Nedungadi">   <!-- Started this project -->
+    <meta name="contact" content="arjun.rajeev@hotmail.com"><!-- For communication purposes -->
+    <meta name="keywords"  content="news, twitter, celebrities, musicians, actors, sportpersons, cms, ui, heriot watt, project, undergraduate, uk, dubai, student, sample" />
+    <title>Vanilla - Home</title>
+    <!-- The CSS Stylesheets will be linked here -->
+    <link href="{{=URL('static','css/Skeleton/normalize.css')}}" rel="stylesheet">       <!-- Skeleton CSS -->
+    <link href="{{=URL('static','css/Skeleton/skeleton.css')}}" rel="stylesheet">        <!-- Skeleton CSS -->
+    <link href="{{=URL('static','css/red.css')}}" rel="stylesheet">                      <!-- red CSS -->
+    <link href="{{=URL('static','css/admin.css')}}" rel="stylesheet">                    <!-- admin CSS -->
+    <script type="text/javascript" src="{{=URL('static','js/essentials.js')}}"></script> <!-- Arjun's JS -->
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{{=URL('static','css/bootstrap.min.css')}}" rel="stylesheet">
+ 
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom CSS-->
+    <link href="{{=URL('static','css/general.css')}}" rel="stylesheet">
+	
+	 <!-- Owl-Carousel -->
+    <link href="{{=URL('static','css/custom.css')}}" rel="stylesheet">
+	<link href="{{=URL('static','css/owl.carousel.css')}}" rel="stylesheet">
+    <link href="{{=URL('static','css/owl.theme.css')}}" rel="stylesheet">
+	<link href="{{=URL('static','css/style.css')}}" rel="stylesheet">
+	<link href="{{=URL('static','css/animate.css')}}" rel="stylesheet">
+	
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="{{=URL('static','css/magnific-popup.css')}}"> 
+	
+	<script src="{{=URL('static','js/TheaterJS-master/src/theater.min.js')}}"></script>
+	<script src="{{=URL('static','js/modernizr-2.8.3.min.js')}}"></script>  <!-- Modernizr /-->
+</head>
+
+<body> 
+
+
+<h1>
+        Hello World :) <br> 
+        Caesar Cipher 
+</h1>
+
+<form>
+    <h5> Enter a Message!</h5>
+    <input type="text" name="message">
+    <h5> Enter a Key!</h5>
+    <input type="text" name="key">
+    <br> 
+    <input type="button" value="Click" name="name" onclick="ajax('{{=URL('default', 'echo')}}',['message','key'],'target')" />
+</form>
+
+<div id="target" style="color: black; border: thin solid black;">
+</div>
+
+<form>
+    <h5> Let's Decode!</h5> 
+    <input type="text" name="cipher"> <br> 
+    
+    <input value="a" type="radio" name="test" />
+    Brute Force it!
+    <br> 
+    <input value="b" type="radio" name="test" />
+    Try a key?
+    <input type="number" name="c_key"/> 
+    <br> 
+    <input type="button" value="Click" name="name" onclick="ajax('{{=URL('default', 'decode')}}',['cipher','test','c_key'],'target1')" />
+</form>
+
+<div id="target1" style="color: black; border: thin solid green;">
+</div>
+
+<h1>
+        Hello World :) <br> 
+        Vigenere Cipher 
+</h1>
+
+<form>
+    <h5> Enter a Message!</h5>
+    <input type="text" name="v_message">
+    <h5> Enter a Key!</h5>
+    <input type="text" name="v_key">
+    <br> 
+    <input type="button" value="Click" name="name" onclick="ajax('{{=URL('default', 'v_echo')}}',['v_message','v_key'],'v_target')" />
+</form>
+
+<div id="v_target" style="color: black; border: thin solid black;">
+</div>
